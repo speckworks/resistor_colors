@@ -12,7 +12,9 @@
 };
 
  const decodedValue = ([colorOne, colorTwo, colorThree]) => {
+    console.log(typeof(`${COLORS[colorOne]}`));
   return +`${COLORS[colorOne]}${COLORS[colorTwo]}`
+ 
 };
 
 decodedValue(["blue", "green", "purple"]);
